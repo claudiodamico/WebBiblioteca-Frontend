@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>Biblioteca App</title>
+  </head>
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: brown;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Biblioteca App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="socios.html">Socios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nuevoSocio.html">Hacerme Socio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="custom-header">
+        <img src="img/header.jpg" alt="Logo de Biblioteca App" style="width: 1340px; height: 450px;">
+    </header>
+
+    <!-- Cards -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="catalogo.html">
+                <div class="card">
+                    <img src="img/catalogo.jpg" class="card-img-top" alt="Imagen de Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Catálogo</h5>
+                        <p class="card-text">Aquí verás el catálogo de libros disponibles.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="reservar.html">
+                <div class="card">
+                    <img src="img/alquiler.webp" class="card-img-top" alt="Imagen de Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Reservas</h5>
+                        <p class="card-text">Aquí podrás reservar un libro en línea.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="nuevoSocio.html">
+                <div class="card">
+                    <img src="img/socio.webp" class="card-img-top" alt="Imagen de Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Socios</h5>
+                        <p class="card-text">Aquí podrás hacerte socio en línea.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Sección de la biblioteca -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/header.jpg" alt="Imagen de la biblioteca" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Historia de la Biblioteca</h2>
+                <p>La Biblioteca App es un lugar de conocimiento y cultura que ha estado sirviendo a nuestra comunidad durante muchos años. Fundada en [año de fundación], nuestra biblioteca ha crecido y evolucionado para satisfacer las necesidades de nuestros lectores.</p>
+                <p>Ofrecemos una amplia gama de libros y recursos para todas las edades, desde libros infantiles hasta obras clásicas y modernas. Nuestra misión es promover la lectura y el aprendizaje en nuestra comunidad, y esperamos que disfrutes de tu visita a nuestra biblioteca.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="card-footer" style="background-color: brown; margin-top: 40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 style="color: white;">Contacto</h5>
+                    <p style="color: white;">Correo: info@bibliotecaapp.com</p>
+                    <p style="color: white;">Teléfono: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: white;">Enlaces</h5>
+                    <ul>
+                        <li style="color: white;"><a href="#" style="color: white;">Términos y condiciones</a></li>
+                        <li style="color: white;"><a href="#" style="color: white;">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: white;">Síguenos</h5>
+                    <p style="color: white;">Facebook</p>
+                    <p style="color: white;">Twitter</p>
+                    <p style="color: white;">Instagram</p>
+                </div>
+            </div>
+            <p class="text-center" style="color: white;">&copy; 2023 Biblioteca App. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-7s7FkR5b5pfo/eE8/j3vSe7p5F4L2NtMyJWt0IV2zmtANdSUzUp2vAKkoF6pBjc" crossorigin="anonymous"></script>
+  </body>
+</html>

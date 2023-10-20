@@ -1,0 +1,161 @@
+<div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalExitoLabel">Reserva Exitosa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¡Se ha realizado la reserva con éxito!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+      <title>Reservar Libro</title>
+    </head>
+    <body> 
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: brown;">
+          <div class="container">
+              <a class="navbar-brand" href="#">Biblioteca App</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="socios.html">Socios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="nuevoSocio.html">Hacerme Socio</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      </br>
+      <h1 style="text-align: center;">Listado de Alquileres</h1>
+      </br>
+      <div class="d-flex justify-content-center">
+        <div class="input-group mb-3" style="width: 50%;">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputReservas">Buscar ISBN</span>
+          </div>
+          <input type="text" class="form-control" id="searchISBNInput" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Ingrese el ISBN">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <table class="table" style="width: 80%;">
+            <thead>
+                <tr>
+                    
+                </tr>
+            </thead>
+            <tbody id="tablaResultadosISBN">
+                
+            </tbody>
+        </table>
+    </div>
+      
+      <div class="d-flex justify-content-center">
+        <div class="input-group mb-3" style="width: 50%;">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputCliente">Buscar Socio</span>
+          </div>
+          <input type="text" class="form-control" id="searchSocioInput" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Ingrese el número de socio">
+        </div>
+      </div>  
+      <div class="d-flex justify-content-center">
+        <table class="table" style="width: 50%;">
+            <thead>
+                <tr>
+                    
+                </tr>
+            </thead>
+            <tbody id="tablaResultadosSocio">
+                
+            </tbody>
+        </table>
+    </div>  
+     </br>
+
+      <table id="reservasTable" class="table">
+        <thead>
+          <tr>
+            <th>Número de Socio</th>
+            <th>Fecha de Alquiler</th>
+            <th>Fecha de Devolución</th>
+            <th>ISBN del Libro</th>
+            <th>Observaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      
+  
+      <footer class="card-footer" style="background-color: brown; margin-top: 40px;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <h5 style="color: white;">Contacto</h5>
+                      <p style="color: white;">Correo: info@bibliotecaapp.com</p>
+                      <p style="color: white;">Teléfono: (123) 456-7890</p>
+                  </div>
+                  <div class="col-md-4">
+                      <h5 style="color: white;">Enlaces</h5>
+                      <ul>
+                          <li style="color: white;"><a href="#" style="color: white;">Términos y condiciones</a></li>
+                          <li style="color: white;"><a href="#" style="color: white;">Política de privacidad</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4">
+                      <h5 style="color: white;">Síguenos</h5>
+                      <p style="color: white;">Facebook</p>
+                      <p style="color: white;">Twitter</p>
+                      <p style="color: white;">Instagram</p>
+                  </div>
+              </div>
+              <p class="text-center" style="color: white;">&copy; 2023 Biblioteca App. Todos los derechos reservados.</p>
+          </div>
+      </footer>
+      
+  
+      <!-- Bootstrap JS (opcional) -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="js/reservas.js"></script>
+      <script src="js/buscarLibro.js"></script>
+      <script src="js/buscarCliente.js"></script>
+
+    </body>
+  </html>
